@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # constants 
-const SPEED = 6000
+const SPEED = 900
 
 # exports
 @onready var camera := $Camera2D as Camera2D
