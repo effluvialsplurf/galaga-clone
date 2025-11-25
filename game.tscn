@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://u1wvcrilmqnv"]
+
+[ext_resource type="PackedScene" uid="uid://bi4jx138c73b6" path="res://level_conveyor/level_conveyor.tscn" id="1_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://bfqw8sbf61byu" path="res://player/player.tscn" id="2_feb5d"]
+
+[node name="Game" type="Node"]
+
+[node name="level_conveyor" parent="." instance=ExtResource("1_e2o6t")]
+
+[node name="Player" parent="level_conveyor" instance=ExtResource("2_feb5d")]
+position = Vector2(180, 520)
+motion_mode = 1
+up_direction = Vector2(0, 1)
